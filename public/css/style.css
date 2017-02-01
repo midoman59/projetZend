@@ -1,17 +1,85 @@
+@font-face {
+	font-family: "bariol";
+	src: url('../fonts/Bariol.ttf');
+}
 body {
     padding-bottom: 40px;
 }
+.navbar{
+	background-color: rgb(245,98,98);
+	margin-bottom: 0px;
+}
 .logo{
 	display: inline-block;
-	padding-top: 39px;
+	padding-top: 23px;
+	padding-left: 374px;
+	padding-right: 230px;
+	padding-bottom: 23px;
 }
 .menu{
 	display: inline-block;
 }
 .menu a 
 {
-	
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	margin-right: 28px;
+	font-weight: bold;
 }
+.menu a:hover
+{
+	background-color: black;
+}
+.corps_1{
+	background-color: rgb(235,79,78);
+}
+.corps_1 h1, p 
+{
+	text-align: center;
+	font-family: bariol;
+	color: white;
+	font-weight: bold;
+}
+.corps_1 h1{
+	font-size: 48px;
+	padding-top: 63px;
+	margin: 0px;
+}
+.corps_1 p
+{
+	font-size: 18px;
+}
+.code-slider{
+	padding-bottom: 21px;
+}
+
+
+
+
+
+
+.corps_2{
+	background-color: rgb(35,35,36);
+}
+.corps_2 h1, p 
+{
+	text-align: center;
+	font-family: bariol;
+	color: white;
+	font-weight: bold;
+}
+.corps_2 h1{
+	font-size: 48px;
+	padding-top: 63px;
+	margin: 0px;
+}
+.corps_2 p
+{
+	font-size: 18px;
+}
+
+
 .zf-green {
     color: #68b604;
 }

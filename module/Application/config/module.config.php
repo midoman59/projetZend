@@ -24,6 +24,26 @@ return [
                     ],
                 ],
             ],
+            'about' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/about-me',
+                    'defaults' => array(
+                        'controller' => Controller\IndexController::class,
+                        'action'     => 'aboutme',
+                    ),
+                ),
+            ),
+            'team' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/team',
+                    'defaults' => array(
+                        'controller' => Controller\IndexController::class,
+                        'action'     => 'team',
+                    ),
+                ),
+            ),
             'application' => [
                 'type'    => Segment::class,
                 'options' => [

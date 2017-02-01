@@ -19,6 +19,7 @@
 				->prependStylesheet($this->basePath('css/bootstrap.min.css'))
 				->prependStylesheet($this->basePath('css/foundation.css'))
 				->prependStylesheet($this->basePath('css/font-awesome.css'))
+				->prependStylesheet($this->basePath('css/style-slider.css'))
 		?>
 
         <!-- Scripts -->
@@ -26,20 +27,23 @@
 				$this->headScript()
 				->prependFile($this->basePath('js/bootstrap.min.js'))
 				->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+				->prependFile($this->basePath('js/js-slider.js'))
+				->prependFile($this->basePath('js/foundation_1.js'))
 		?>
     </head>
     <body>
+		<div class="navbar">
 		<div class="logo"><img src="<?= $this->basePath('img/logo.png') ?>" alt="Logo"></div>
 		<ul class="menu">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Team</a></li>
+			<li><a href="<?= $this->url('home') ?>">Home</a></li>
+			<li><a href="<?= $this->url('about') ?>">About</a></li>
+			<li><a href="<?= $this->url('team') ?>">Team</a></li>
 			<li><a href="#">Portfolio</a></li>
 			<li><a href="#">Other</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
-        
-        <div class="container">
+        </div>
+        <div class="conteneur">
 <?= $this->content ?>
             <hr>
             <footer>
@@ -47,5 +51,6 @@
             </footer>
         </div>
 <?= $this->inlineScript() ?>
+		<?=$this->headScript() ->prependFile($this->basePath('js/js-slider.js'))?>
     </body>
 </html>
